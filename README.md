@@ -1,4 +1,3 @@
-
 # 🚀 Roucan WEB-DEV - Portfólio Pessoal
 
 [![GitHub license](https://img.shields.io/github/license/seu-usuario/seu-repositorio)](LICENSE)
@@ -34,3 +33,44 @@ Bem-vindo ao meu portfólio pessoal como desenvolvedor web! Um espaço onde desi
   - `--focus: #f84f39`
 
 ## 📂 Estrutura do Projeto
+.
+├── css/
+│ └── style.css # Estilos principais
+├── images/ # Assets visuais
+├── js/ # Scripts JavaScript
+├── index.html # Página principal
+└── README.md # Este arquivo
+
+text
+
+## 🚀 Como Executar Localmente
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+Abra o arquivo index.html no seu navegador.
+
+🌟 Destaques do Código
+css
+/* Exemplo de técnica avançada usada */
+.container-imagem {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  transform: scale(1.25);
+  transform-origin: 0 0;
+}
+🤝 Como Contribuir
+Contribuições são bem-vindas! Siga estes passos:
+
+Faça um Fork do projeto
+
+Crie sua Branch (git checkout -b feature/AmazingFeature)
+
+Commit suas mudanças (git commit -m 'Add some AmazingFeature')
+
+Push para a Branch (git push origin feature/AmazingFeature)
+
+Abra um Pull Request
+
+📄 Licença
+Distribuído sob a licença MIT. Veja LICENSE para mais informações.
