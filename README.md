@@ -1,13 +1,13 @@
 # 🚀 Roucan WEB-DEV - Portfólio Pessoal
 
-[![GitHub license](https://img.shields.io/github/license/seu-usuario/seu-repositorio)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/seu-usuario/seu-repositorio)](https://github.com/seu-usuario/seu-repositorio/stargazers)
+[![GitHub license](https://img.shields.io/github/license/GabrielGit10110/GabrielGit10110.github.io)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/seu-usuario/seu-repositorio)](https://github.com/GabrielGit10110/GabrielGit10110.github.io/stargazers)
 
-Bem-vindo ao meu portfólio pessoal como desenvolvedor web! Um espaço onde design minimalista encontra funcionalidade robusta.
+Bem-vindo ao meu portfólio pessoal como desenvolvedor web! 
 
 ## ✨ Demonstração
 
-[![Live Demo](https://img.shields.io/badge/-Live%20Demo-blue?style=for-the-badge)](https://seu-usuario.github.io)
+[![Live Demo](https://img.shields.io/badge/-Live%20Demo-blue?style=for-the-badge)](https://gabrielgit10110.github.io/)
 
 ![Captura de Tela do Site](images/screenshot.png)
 
@@ -33,16 +33,18 @@ Bem-vindo ao meu portfólio pessoal como desenvolvedor web! Um espaço onde desi
   - `--focus: #f84f39`
 
 ## 📂 Estrutura do Projeto
+```plaintext
 .
 ├── css/
-│ └── style.css # Estilos principais
-├── images/ # Assets visuais
-├── js/ # Scripts JavaScript
-├── index.html # Página principal
-└── README.md # Este arquivo
-
-text
-
+│   └── style.css
+├── images/
+│   ├── me_and_tux.png
+│   ├── crowlogo.png
+│   └── star.png
+├── js/
+├── index.html
+└── README.md
+```
 ## 🚀 Como Executar Localmente
 
 1. Clone o repositório:
