@@ -1,15 +1,12 @@
 # 🚀 Roucan WEB-DEV - Portfólio Pessoal
 
-[![GitHub license](https://img.shields.io/github/license/GabrielGit10110/GabrielGit10110.github.io)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/seu-usuario/seu-repositorio)](https://github.com/GabrielGit10110/GabrielGit10110.github.io/stargazers)
-
 Bem-vindo ao meu portfólio pessoal como desenvolvedor web! 
 
 ## ✨ Demonstração
 
 [![Live Demo](https://img.shields.io/badge/-Live%20Demo-blue?style=for-the-badge)](https://gabrielgit10110.github.io/)
 
-![Captura de Tela do Site](images/screenshot.png)
+![Captura de Tela do Site](~/GabrielGit10110.github.io/images/screenshot.png)
 
 ## 🛠 Tecnologias Utilizadas
 
