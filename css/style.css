@@ -1,0 +1,194 @@
+:root {
+  --white: #faf7f5;
+  --black: #141414;
+  --focus: #f84f39;
+  --background: #28243a;
+}
+/* Corpo */
+body {
+  background-color: #181624;
+}
+
+/* Topo e cabecalho */
+.topo {
+  display: flex;
+  flex-direction: column;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Nome no cabeçalho, menor */
+.nome {
+  display: inline-block;
+  margin-top: 60px;
+  margin-left: 77px;
+  color: var(--white);
+  font-size: 20px;
+  font-family: "JetBrains Mono";
+}
+
+/* home about skills projects contact */
+.opcoes {
+  display: inline-block;
+  color: var(--white);
+  margin-top: 60px;
+  margin-right: 77px;
+  font-size: 20px;
+  font-family: "JetBrains Mono";
+}
+
+.opcoes span {
+  text-decoration: underline;
+  margin-right: 10px; /* Adiciona espaço entre as palavras */
+}
+
+/* Remove a margem do último elemento para evitar espaço extra */
+.opcoes span:last-child {
+  margin-right: 0;
+}
+
+/* conteudo: imagem + ROUKAN */
+
+.conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+/* Container com os Textos */
+.container-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Alinha textos à esquerda */
+  width: 10%;
+}
+/* NOME PROGRAMADOR */
+.ROUKAN {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 7.5%;
+  top: 4px;
+
+  color: var(--focus);
+  font-family: "Krux Grunge";
+  font-size: 120px;
+  font-style: bold;
+  transform: scaleY(0.65);
+  letter-spacing: -15px;
+
+  z-index: 10;
+}
+
+.ROUKAN span {
+  margin-bottom: -10px;
+  text-align: right;
+}
+/* Frase do lado do TUX */
+.frase {
+  position: absolute;
+  left: 34%;
+  top: 68%;
+  transform: rotate(90deg);
+
+  color: var(--focus);
+  font-family: "JetBrains Mono";
+  font-size: 15px;
+  font-style: bold;
+  z-index: 10;
+}
+/* Linguagens de Programação */
+.container-linguagens {
+  display: flex;
+  position: absolute;
+  transform: translate(-762%, 1320%);
+
+  color: var(--white);
+  font-family: "JetBrains Mono";
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+  z-index: 10;
+}
+
+.backend {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+}
+.frontend {
+  display: flex;
+  flex-direction: column;
+}
+/* 
+* conteudo (avô-container):
+* imagem (pai-container): 
+* frase (afilhado):
+*/
+/* Container com as Imagens */
+.container-imagem {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  position: relative;
+  width: 2000px;
+  height: 1966px;
+/* DEBUG
+  border: 1px solid blue;
+*/
+}
+
+/* Remove completamente grid-area dos itens filhos */
+.tux,
+.logo,
+.corvo,
+.globo,
+.quadrado,
+.star {
+  position: absolute;
+/*  border: 1px solid red; */
+}
+
+/* Posicionamento absoluto com transform e z-index */
+.tux {
+  width: 230px;
+  height: 285px;
+  transform: translate(390px, 265px);
+  z-index: 6;
+}
+
+.corvo {
+  width: 580px;
+  height: auto;
+  transform: translate(25px, 95px); /* Valores positivos */
+  z-index: 5; /* Deve ser menor que .tux */
+}
+
+.quadrado {
+  width: 35%;
+  height: auto;
+  transform: translate(75px, 0px); /* Valores normais */
+  z-index: 1; /* Camada mais baixa */
+}
+
+.logo {
+  width: 20%;
+  height: auto;
+  transform: translate(600px, 10px);
+  z-index: 3;
+}
+
+.star {
+  width: 22%;
+  height: auto;
+  transform: translate(985px, 320px);
+  z-index: 7; /* Máxima prioridade */
+}
+
+.globo {
+  transform: translate(15%, 8%);
+  z-index: 1;
+}
