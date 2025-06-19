@@ -1,4 +1,4 @@
-# 🚀 Roucan WEB-DEV - Portfólio Pessoal
+# 🚀 Roukan WEB-DEV - Portfólio Pessoal
 
 Bem-vindo ao meu portfólio pessoal como desenvolvedor web! 
 
