@@ -3,8 +3,17 @@
 /* ============================================= */
 .about {
   position: relative;
+  transform: translate(0, 20rem);
   z-index: 10;
 }
+
+/* Estilo para ícones */
+.nf {
+  font-size: 1.2em;
+  margin-right: 0.5rem;
+  color: var(--focus); /* Cor dos ícones */
+}
+
 .title {
   text-align: center;
   font-family: var(--font-primary);
@@ -12,14 +21,63 @@
   color: var(--white);
 }
 
+/* Caixa com os paragrafos "sobre mim" e "skills" */
 .paragrafos {
   display: flex;
   position: relative;
+  width: 90%;
+
   justify-content: space-between;
+  justify-items: center;
+  transform: translateX(4rem);
+
+  gap: 2rem;
 }
 
 .esquerda,
 .direita {
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
+  background-color: var(--focus);
+  text-align: left;
+  width: 50%;
+  height: 10%;
+
+  font-family: var(--font-primary);
+  font-weight: bold;
+  color: var(--white);
+
+}
+
+/* icone 3 pontos (tanto na esquerda quanto na direita) */
+.nf-md-dots_horizontal {
+  padding-left: 1rem;
+  color: var(--black);
+}
+
+/* Who I Am */
+
+.esquerda {
+  text-align: left;
+  font-size: 30px;
+}
+
+.esquerda .texto {
+  padding: 1rem 2rem;
+
+  background-color: var(--black);
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.direita {
+  text-align: left;
+  font-size: 30px;
+}
+
+.direita .texto {
+  padding: 1rem 2rem;
+
+  background-color: var(--black);
+  font-weight: normal;
+  font-size: 16px;
 }
