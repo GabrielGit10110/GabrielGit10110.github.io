@@ -1,147 +1,138 @@
+/* ============================================= */
+/* VARIÁVEIS GLOBAIS                             */
+/* ============================================= */
 :root {
   --white: #faf7f5;
   --black: #141414;
-  --focus: #f84f39;
-  --background: #28243a;
-}
-/* Corpo */
-body {
-  background-color: #181624;
+  --focus: #f84f39; /* Cor de destaque (laranja) */
+  --background: #28243a; /* Cor de fundo secundária */
 }
 
-/* Topo e cabecalho */
+/* ============================================= */
+/* ESTILOS GERAIS                                */
+/* ============================================= */
+body {
+  background-color: #181624;
+  font-family: "JetBrains Mono", monospace;
+  color: var(--white);
+}
+
+/* ============================================= */
+/* CABEÇALHO                                     */
+/* ============================================= */
 .topo {
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 .cabecalho {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 60px 77px 0;
+  width: 100%;
+  box-sizing: border-box;
 }
-/* Nome no cabeçalho, menor */
+
+/* Nome no cabeçalho (ROUKAN menor no topo) */
 .nome {
-  display: inline-block;
-  margin-top: 60px;
-  margin-left: 77px;
   color: var(--white);
-  font-size: 20px;
   font-family: "JetBrains Mono";
 }
 
-/* home about skills projects contact */
+/* Menu de navegação (home about skills projects contact) */
 .opcoes {
-  display: inline-block;
-  color: var(--white);
-  margin-top: 60px;
-  margin-right: 77px;
-  font-size: 20px;
-  font-family: "JetBrains Mono";
+  display: flex;
+  gap: 10px; /* Substitui as margens individuais por gap */
 }
 
 .opcoes span {
   text-decoration: underline;
-  margin-right: 10px; /* Adiciona espaço entre as palavras */
+  cursor: pointer;
+  transition: color 0.3s;
 }
 
-/* Remove a margem do último elemento para evitar espaço extra */
-.opcoes span:last-child {
-  margin-right: 0;
+.opcoes span:hover {
+  color: var(--focus);
 }
 
-/* conteudo: imagem + ROUKAN */
-
+/* ============================================= */
+/* CONTEÚDO PRINCIPAL                            */
+/* ============================================= */
 .conteudo {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
+  position: relative;
 }
-/* Container com os Textos */
+
+/* Container com os textos à direita */
 .container-texto {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* Alinha textos à esquerda */
+  align-items: flex-end;
   width: 10%;
+  position: relative;
 }
-/* NOME PROGRAMADOR */
+
+/* Nome do programador (ROUKAN grande) */
 .ROUKAN {
   display: flex;
   flex-direction: column;
   position: absolute;
   right: 7.5%;
   top: 4px;
-
   color: var(--focus);
   font-family: "Krux Grunge";
-  font-size: 120px;
-  font-style: bold;
+  font-weight: bold;
   transform: scaleY(0.65);
   letter-spacing: -15px;
-
   z-index: 10;
 }
 
 .ROUKAN span {
   margin-bottom: -10px;
   text-align: right;
+  line-height: 0.8;
 }
-/* Frase do lado do TUX */
-.frase {
-  position: absolute;
-  left: 34%;
-  top: 68%;
-  transform: rotate(90deg);
 
-  color: var(--focus);
-  font-family: "JetBrains Mono";
-  font-size: 15px;
-  font-style: bold;
-  z-index: 10;
-}
-/* Linguagens de Programação */
+/* Container das linguagens de programação */
 .container-linguagens {
-  display: flex;
   position: absolute;
-  transform: translate(-762%, 1320%);
-
+  display: flex;
+  gap: 20px;
   color: var(--white);
-  font-family: "JetBrains Mono";
   font-size: 15px;
   font-weight: bold;
   font-style: italic;
   z-index: 10;
+  transform: translate(45%, 1270%);
 }
 
-.backend {
-  display: flex;
-  flex-direction: column;
-  padding-right: 10px;
-}
+.backend,
 .frontend {
   display: flex;
   flex-direction: column;
 }
-/* 
-* conteudo (avô-container):
-* imagem (pai-container): 
-* frase (afilhado):
-*/
-/* Container com as Imagens */
+
+/* ============================================= */
+/* CONTAINER DE IMAGENS                          */
+/* ============================================= */
 .container-imagem {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   position: relative;
-  width: 2000px;
-  height: 1966px;
-/* DEBUG
-  border: 1px solid blue;
-*/
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
-/* Remove completamente grid-area dos itens filhos */
+/* Posicionamento individual das imagens */
+
+/* Estilos comuns para todas as imagens */
 .tux,
 .logo,
 .corvo,
@@ -149,46 +140,152 @@ body {
 .quadrado,
 .star {
   position: absolute;
-/*  border: 1px solid red; */
+  transition: transform 0.3s ease;
+  width: auto;
+  max-width: 100%;
+  transform: translate(0, 0);
 }
 
-/* Posicionamento absoluto com transform e z-index */
-.tux {
+/* container com a frase e a imagem do tux */
+.container-tux {
+  position: relative;
+  display: inline-block;
   width: 230px;
   height: 285px;
-  transform: translate(390px, 265px);
+  transform: translate(175%, 98%);
   z-index: 6;
 }
 
+/* Frase do lado do TUX */
+.frase {
+  position: absolute;
+  display: block;
+  transform: rotate(90deg) translate(35%, -420%);
+  color: var(--focus);
+  font-size: 15px;
+  font-weight: bold;
+
+  z-index: 10;
+  white-space: nowrap;
+}
+
+.tux {
+  width: 230px;
+  height: 285px;
+  display: block;
+}
+
+/* container com imagem do corvo e o quadrado */
+.container-corvo {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  transform: translate(-16.4%, 0);
+}
+
 .corvo {
-  width: 580px;
+  position: absolute;
+  display: block;
+  width: 40%;
   height: auto;
-  transform: translate(25px, 95px); /* Valores positivos */
-  z-index: 5; /* Deve ser menor que .tux */
+  transform: translate(5%, 22.75%);
+  z-index: 5;
 }
 
 .quadrado {
-  width: 35%;
+  position: absolute;
+  display: block;
+  width: 30.78%;
   height: auto;
-  transform: translate(75px, 0px); /* Valores normais */
-  z-index: 1; /* Camada mais baixa */
+  transform: translate(75px, 0px);
+  z-index: 1;
 }
 
 .logo {
   width: 20%;
-  height: auto;
   transform: translate(600px, 10px);
   z-index: 3;
 }
 
 .star {
   width: 22%;
-  height: auto;
   transform: translate(985px, 320px);
-  z-index: 7; /* Máxima prioridade */
+  z-index: 7;
 }
 
 .globo {
   transform: translate(15%, 8%);
   z-index: 1;
+}
+
+/* ============================================= */
+/* RESPONSIVIDADE                                */
+/* ============================================= */
+/* Dispositivos Mobile menores do que 600px de tamanho */
+@media (max-width: 600px) {
+  .cabecalho {
+    padding: 30px 20px 0;
+  }
+
+  .nome,
+  .opcoes {
+    font-size: 14px;
+  }
+
+  .ROUKAN {
+    font-size: 80px;
+    right: 5%;
+  }
+
+  .container-imagem {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+
+  .tux {
+    width: 150px;
+    height: auto;
+    transform: translate(30%, 20%);
+  }
+
+  .frase {
+    font-size: 12px;
+    left: 25%;
+    top: 60%;
+  }
+
+  .container-linguagens {
+    position: absolute;
+    display: block;
+    font-size: 12px;
+    bottom: 10px;
+    left: 10px;
+  }
+}
+/* Dispositivos com 601 px até 767 px de tamanho */
+@media (min-width: 601px) and (max-width: 767px) {
+  .cabecalho {
+    padding: 40px 30px 0;
+  }
+
+  .ROUKAN {
+    font-size: 110px;
+  }
+}
+/* Dispositivos com 769 px até 991 px de tamanho */
+@media (min-width: 768px) and (max-width: 991px) {
+  .cabecalho {
+    padding: 50px 50px 0;
+  }
+
+  .ROUKAN {
+    font-size: 110px;
+    right: 6%;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Estilos já definidos na versão desktop */
 }
