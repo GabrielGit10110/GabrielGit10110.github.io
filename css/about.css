@@ -1,0 +1,25 @@
+/* ============================================= */
+/* SECAO ABOUT                                   */
+/* ============================================= */
+.about {
+  position: relative;
+  z-index: 10;
+}
+.title {
+  text-align: center;
+  font-family: var(--font-primary);
+  font-size: 100px;
+  color: var(--white);
+}
+
+.paragrafos {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.esquerda,
+.direita {
+  display: flex;
+  flex-direction: column;
+}

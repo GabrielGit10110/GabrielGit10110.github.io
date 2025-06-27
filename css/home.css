@@ -1,31 +1,11 @@
 /* ============================================= */
-/* VARIÁVEIS GLOBAIS                             */
-/* ============================================= */
-:root {
-  --white: #faf7f5;
-  --black: #141414;
-  --focus: #f84f39; /* Cor de destaque (laranja) */
-  --background: #28243a; /* Cor de fundo secundária */
-  --background-about: var(--focus);
-}
-
-html { 
-  scroll-behavior: smooth;
-}
-
-/* ============================================= */
-/* ESTILOS GERAIS                                */
-/* ============================================= */
-body {
-  background-color: #181624;
-  font-family: "JetBrains Mono", monospace;
-  color: var(--white);
-  overflow-x: hidden;
-}
-
-/* ============================================= */
 /* CABEÇALHO                                     */
 /* ============================================= */
+.home { 
+  font-family: var (--font-primary);
+  color: var(--white);
+}
+
 .home .topo {
   display: flex;
   flex-direction: column;
@@ -45,11 +25,12 @@ body {
 .home .nome {
   font-size: 20px;
   color: var(--white);
-  font-family: "JetBrains Mono";
+  font-family: var(--font-primary);
 }
 
 /* Menu de navegação (home about skills projects contact) */
 .home .opcoes {
+  font-family: var(--font-primary);
   font-size: 20px;
   display: flex;
   gap: 10px; /* Substitui as margens individuais por gap */
@@ -70,7 +51,7 @@ body {
   flex-direction: column;
   position: absolute;
   color: var(--focus);
-  font-family: "Krux Grunge";
+  font-family: var(--font-secondary);
   font-weight: bolder;
   font-size: 115px;
   transform: scaleY(0.67) translate(232%, 5%);
@@ -104,9 +85,12 @@ body {
   display: flex;
   gap: 10px;
   color: var(--white);
+
+  font-family: var(--font-primary);
   font-size: 15px;
   font-weight: bold;
   font-style: italic;
+
   z-index: 10;
   transform: translate(48%, 1330%);
 }
@@ -162,6 +146,7 @@ body {
   display: block;
   transform: rotate(90deg) translate(38%, -420%);
   color: var(--focus);
+  font-family: var(--font-primary);
   font-size: 15px;
   font-weight: bold;
 
@@ -219,5 +204,3 @@ body {
   transform: translate(5%, 12%);
   z-index: 0;
 }
-
-

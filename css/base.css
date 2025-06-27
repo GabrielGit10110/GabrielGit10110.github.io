@@ -1,0 +1,38 @@
+/* ============================================= */
+/* VARIÁVEIS GLOBAIS                             */
+/* ============================================= */
+:root {
+  /* fontes */
+  --font-primary: "JetBrains Mono", monospace;
+  --font-secondary: "Krux Grunge";
+
+  /* Cores texto e itens */
+  --white: #faf7f5;
+  --black: #141414;
+  --focus: #f84f39; /* Cor de destaque (laranja) */
+
+  /* Cores do Background */
+  --background: #28243a; /* Cor de fundo secundária */
+}
+
+/* Classes utilitárias para fontes */
+.font-primary {
+  font-family: var(--font-primary);
+}
+
+.font-secondary {
+  font-family: var(--font-secondary);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================================= */
+/* ESTILOS GERAIS                                */
+/* ============================================= */
+body {
+  background-color: #181624;
+  color: var(--white);
+  overflow-x: hidden;
+}
