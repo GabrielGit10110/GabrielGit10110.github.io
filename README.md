@@ -60,7 +60,7 @@ css:
   transform-origin: 0 0;
 }
 
-🤝 Como Contribuir
+🤝 Como Contribuir,
 Contribuições são bem-vindas! Siga estes passos:
 
 Faça um Fork do projeto
