@@ -50,7 +50,8 @@ Bem-vindo ao meu portfólio pessoal como desenvolvedor web!
 Abra o arquivo index.html no seu navegador.
 
 🌟 Destaques do Código
-css
+css:
+
 /* Exemplo de técnica avançada usada */
 .container-imagem {
   display: grid;
@@ -58,6 +59,7 @@ css
   transform: scale(1.25);
   transform-origin: 0 0;
 }
+
 🤝 Como Contribuir
 Contribuições são bem-vindas! Siga estes passos:
 
