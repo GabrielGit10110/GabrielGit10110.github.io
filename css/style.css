@@ -15,6 +15,7 @@ body {
   background-color: #181624;
   font-family: "JetBrains Mono", monospace;
   color: var(--white);
+  overflow-x: hidden;
 }
 
 /* ============================================= */
@@ -29,7 +30,7 @@ body {
 .cabecalho {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  position: relative;
   padding: 60px 77px 0;
   width: 100%;
   box-sizing: border-box;
@@ -37,12 +38,14 @@ body {
 
 /* Nome no cabeçalho (ROUKAN menor no topo) */
 .nome {
+  font-size: 20px;
   color: var(--white);
   font-family: "JetBrains Mono";
 }
 
 /* Menu de navegação (home about skills projects contact) */
 .opcoes {
+  font-size: 20px;
   display: flex;
   gap: 10px; /* Substitui as margens individuais por gap */
 }
@@ -57,6 +60,27 @@ body {
   color: var(--focus);
 }
 
+.ROUKAN {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  color: var(--focus);
+  font-family: "Krux Grunge";
+  font-weight: bolder;
+  font-size: 115px;
+  transform: scaleY(0.67) translate(232%, 5%);
+  letter-spacing: -8px;
+  z-index: 1;
+}
+
+/* CONFIGURAÇÕES DO ROUKAN */
+.ROUKAN span {
+  margin-bottom: 7%;
+  text-align: center;
+  line-height: 0.8;
+}
+
+
 /* ============================================= */
 /* CONTEÚDO PRINCIPAL                            */
 /* ============================================= */
@@ -68,47 +92,18 @@ body {
   position: relative;
 }
 
-/* Container com os textos à direita */
-.container-texto {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 10%;
-  position: relative;
-}
-
-/* Nome do programador (ROUKAN grande) */
-.ROUKAN {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  right: 7.5%;
-  top: 4px;
-  color: var(--focus);
-  font-family: "Krux Grunge";
-  font-weight: bold;
-  transform: scaleY(0.65);
-  letter-spacing: -15px;
-  z-index: 10;
-}
-
-.ROUKAN span {
-  margin-bottom: -10px;
-  text-align: right;
-  line-height: 0.8;
-}
 
 /* Container das linguagens de programação */
 .container-linguagens {
   position: absolute;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   color: var(--white);
   font-size: 15px;
   font-weight: bold;
   font-style: italic;
   z-index: 10;
-  transform: translate(45%, 1270%);
+  transform: translate(48%, 1330%);
 }
 
 .backend,
@@ -160,7 +155,7 @@ body {
 .frase {
   position: absolute;
   display: block;
-  transform: rotate(90deg) translate(35%, -420%);
+  transform: rotate(90deg) translate(38%, -420%);
   color: var(--focus);
   font-size: 15px;
   font-weight: bold;
@@ -182,41 +177,42 @@ body {
   width: 100%;
   height: 100%;
   transform: translate(-16.4%, 0);
+  z-index: 5;
 }
 
 .corvo {
   position: absolute;
   display: block;
-  width: 40%;
+  width: 42%;
   height: auto;
-  transform: translate(5%, 22.75%);
+  transform: translate(5%, 21.75%);
   z-index: 5;
 }
 
 .quadrado {
   position: absolute;
   display: block;
-  width: 30.78%;
+  width: 32%;
   height: auto;
   transform: translate(75px, 0px);
   z-index: 1;
 }
 
 .logo {
-  width: 20%;
-  transform: translate(600px, 10px);
+  width: 18%;
+  transform: translate(150%, 10%);
   z-index: 3;
 }
 
 .star {
-  width: 22%;
-  transform: translate(985px, 320px);
+  width: 20%;
+  transform: translate(270%, 115%);
   z-index: 7;
 }
 
 .globo {
-  transform: translate(15%, 8%);
-  z-index: 1;
+  transform: translate(5%, 12%);
+  z-index: 0;
 }
 
 /* ============================================= */
