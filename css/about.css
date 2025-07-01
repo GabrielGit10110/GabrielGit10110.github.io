@@ -17,7 +17,7 @@
 .title {
   text-align: center;
   font-family: var(--font-primary);
-  font-size: 100px;
+  font-size: 6.25rem;
   color: var(--white);
 }
 
@@ -45,7 +45,6 @@
   font-family: var(--font-primary);
   font-weight: bold;
   color: var(--white);
-
 }
 
 /* icone 3 pontos (tanto na esquerda quanto na direita) */
@@ -58,7 +57,7 @@
 
 .esquerda {
   text-align: left;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 .esquerda .texto {
@@ -66,18 +65,55 @@
 
   background-color: var(--black);
   font-weight: normal;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .direita {
   text-align: left;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 .direita .texto {
   padding: 1rem 2rem;
-
   background-color: var(--black);
   font-weight: normal;
-  font-size: 16px;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .about {
+    padding: 1rem;
+    transform: translate(0, 10rem); /* Ajuste menor para mobile */
+  }
+
+  .title {
+    font-size: 3rem; /* Título menor em mobile */
+  }
+
+  .paragrafos {
+    display: block;
+    width: 100%; /* Ocupa 100% da largura */
+    transform: none; /* Remove o translateX */
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .esquerda, 
+  .direita {
+    display: block;
+    width: 100%; /* Largura total */
+    margin-bottom: 2rem; /* Espaço entre as caixas */
+    height: auto; /* Altura automática */
+  }
+
+  .esquerda .texto,
+  .direita .texto {
+    padding: 1.5rem; /* Mais espaço interno */
+    font-size: 0.9rem; /* Texto ligeiramente menor */
+  }
+
+  .nf-md-dots_horizontal {
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+  }
 }

@@ -1,4 +1,22 @@
-.projects { 
+.projects {
+  transform: translate(0, 40rem);
   font-family: var (--font-primary);
   color: var(--white);
+  position: relative;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 6.25rem;
+}
+
+@media (max-width: 768px) {
+ .projects { 
+    transform: translate(0, 20rem);
+  }
+
+  .titulo { 
+    font-size: 4rem;
+    text-align: center;
+  }
 }

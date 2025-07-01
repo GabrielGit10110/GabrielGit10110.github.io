@@ -1,8 +1,8 @@
 /* ============================================= */
 /* CABEÇALHO                                     */
 /* ============================================= */
-.home { 
-  font-family: var (--font-primary);
+.home {
+  font-family: var(--font-primary);
   color: var(--white);
 }
 
@@ -16,24 +16,24 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  padding: 60px 77px 0;
+  padding: 3.75rem 4.813rem 0; /* 60px 77px -> mantido em rem */
   width: 100%;
   box-sizing: border-box;
 }
 
-/* Nome no cabeçalho (ROUKAN menor no topo) */
+/* Nome no cabeçalho */
 .home .nome {
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   color: var(--white);
   font-family: var(--font-primary);
 }
 
-/* Menu de navegação (home about skills projects contact) */
+/* Menu de navegação */
 .home .opcoes {
   font-family: var(--font-primary);
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   display: flex;
-  gap: 10px; /* Substitui as margens individuais por gap */
+  gap: 0.625rem; /* 10px */
 }
 
 .opcoes span {
@@ -53,19 +53,18 @@
   color: var(--focus);
   font-family: var(--font-secondary);
   font-weight: bolder;
-  font-size: 115px;
+  font-size: 7.188rem; /* 115px */
   transform: scaleY(0.67) translate(232%, 5%);
-  letter-spacing: -8px;
+  letter-spacing: -0.5rem; /* -8px */
   z-index: 1;
 }
 
-/* CONFIGURAÇÕES DO ROUKAN */
+/* Configurações do ROUKAN */
 .ROUKAN span {
   margin-bottom: 7%;
   text-align: center;
   line-height: 0.8;
 }
-
 
 /* ============================================= */
 /* CONTEÚDO HOME                                 */
@@ -74,23 +73,20 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 40px;
+  gap: 2.5rem; /* 40px */
   position: relative;
 }
 
-
-/* Container das linguagens de programação */
+/* Container das linguagens */
 .home .container-linguagens {
   position: absolute;
   display: flex;
-  gap: 10px;
+  gap: 0.625rem; /* 10px */
   color: var(--white);
-
   font-family: var(--font-primary);
-  font-size: 15px;
+  font-size: 0.938rem; /* 15px */
   font-weight: bold;
   font-style: italic;
-
   z-index: 10;
   transform: translate(48%, 1330%);
 }
@@ -114,9 +110,7 @@
   margin: 0 auto;
 }
 
-/* Posicionamento individual das imagens */
-
-/* Estilos comuns para todas as imagens */
+/* Estilos comuns para imagens */
 .tux,
 .logo,
 .corvo,
@@ -130,37 +124,37 @@
   transform: translate(0, 0);
 }
 
-/* container com a frase e a imagem do tux */
+/* Container do TUX */
 .home .container-tux {
   position: relative;
   display: inline-block;
-  width: 230px;
-  height: 285px;
+  width: 14.375rem; /* 230px */
+  height: 17.813rem; /* 285px */
   transform: translate(175%, 98%);
   z-index: 6;
 }
 
-/* Frase do lado do TUX */
+/* Frase do TUX */
 .frase {
   position: absolute;
   display: block;
   transform: rotate(90deg) translate(38%, -420%);
   color: var(--focus);
   font-family: var(--font-primary);
-  font-size: 15px;
+  font-size: 0.938rem; /* 15px */
   font-weight: bold;
-
   z-index: 10;
   white-space: nowrap;
 }
 
 .tux {
-  width: 230px;
-  height: 285px;
+  transition: transform 0.3s ease;
+  width: 14.375rem; /* 230px */
+  height: 17.813rem; /* 285px */
   display: block;
 }
 
-/* container com imagem do corvo e o quadrado */
+/* Container do corvo */
 .home .container-corvo {
   position: absolute;
   display: inline-block;
@@ -184,7 +178,7 @@
   display: block;
   width: 32%;
   height: auto;
-  transform: translate(75px, 0px);
+  transform: translate(4.688rem, 0); /* 75px */
   z-index: 1;
 }
 
@@ -203,4 +197,75 @@
 .globo {
   transform: translate(5%, 12%);
   z-index: 0;
+}
+
+/* ============================================= */
+/* RESPONSIVIDADE                                */
+/* ============================================= */
+
+@media (max-width: 768px) {
+  body,
+  html {
+    width: 100vw;
+    overflow-x: hidden; /* Evita scroll horizontal */
+    margin: 0;
+    padding: 0;
+  }
+
+  .home .cabecalho {
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 100%;
+    background-color: var(--focus);
+  }
+
+  .opcoes span:hover {
+    color: var(--black);
+  }
+
+  .home .nome {
+    font-size: 1.25rem; /* 20px */
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .home .opcoes {
+    font-size: 1rem;
+    transform: translateX(1rem);
+  }
+
+  .home .container-imagem {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .tux,
+  .corvo,
+  .quadrado,
+  .star {
+    width: 0;
+  }
+
+  .frase {
+    font-size: 0;
+  }
+
+  .home .container-linguagens {
+    font-size: 0;
+  }
+
+  .logo { 
+    position: absolute;
+    transform: translate(-12rem, 6rem);
+    width: 80%;
+  }
+
+  .globo {
+    transform: translate(0%, 12%);
+  }
 }
