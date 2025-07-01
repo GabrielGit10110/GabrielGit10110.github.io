@@ -4,9 +4,11 @@
 .home {
   font-family: var(--font-primary);
   color: var(--white);
+  position: relative;
 }
 
 .home .topo {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -54,9 +56,10 @@
   font-family: var(--font-secondary);
   font-weight: bolder;
   font-size: 7.188rem; /* 115px */
-  transform: scaleY(0.67) translate(232%, 5%);
+  transform: scaleY(0.67) translateX(236%);
+  margin-top: 1.2%;
   letter-spacing: -0.5rem; /* -8px */
-  z-index: 1;
+  z-index: 10;
 }
 
 /* Configurações do ROUKAN */
@@ -70,6 +73,7 @@
 /* CONTEÚDO HOME                                 */
 /* ============================================= */
 .home .conteudo {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -223,10 +227,6 @@
     margin-bottom: 1rem;
   }
 
-  .home .ROUKAN { 
-    font-size: 0; 
-  }
-
   .home .opcoes {
     font-size: 1rem;
     transform: translateX(1rem);
@@ -255,7 +255,7 @@
     font-size: 0;
   }
 
-  .logo { 
+  .logo {
     position: absolute;
     transform: translate(-12rem, 6rem);
     width: 80%;

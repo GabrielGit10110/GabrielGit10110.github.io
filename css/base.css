@@ -27,9 +27,11 @@
   body,
   html {
     width: 100vw;
+    height: 100vh;
     overflow-x: hidden; /* Evita scroll horizontal */
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
   }
 
 /* ============================================= */
@@ -38,5 +40,4 @@
 body {
   background-color: #181624;
   color: var(--white);
-  overflow-x: hidden;
 }
