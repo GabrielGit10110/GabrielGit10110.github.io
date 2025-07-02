@@ -244,7 +244,7 @@
   .corvo,
   .quadrado,
   .tux {
-    opacity: 0%;
+    opacity: 0;
   }
 
   .frase {
@@ -272,5 +272,30 @@
   .globo {
     transform: translate(-61%, 12%);
     width: 80%;
+  }
+}
+
+@media (max-width: 412px) {
+  .logo { 
+    transform: translate(-13.5rem, 6rem);
+  }
+  .star { 
+   transform: translate(-12rem, 25rem);
+   width: 80%;
+  }
+
+  .home .opcoes { 
+    position: relative;
+    left: 1.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .logo { 
+    transform: translate(-12rem, 6rem);
+  }
+  .star { 
+   transform: translate(-9.5rem, 22rem);
+   width: 60%;
   }
 }

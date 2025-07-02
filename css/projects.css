@@ -64,7 +64,7 @@
     transform: translate(1.5rem, -35rem);
   }
 
-  .projects .backend { 
+  .projects .backend {
     transform: translate(-3rem, 0rem);
   }
 
@@ -93,5 +93,45 @@
     justify-content: space-between;
     padding: 0rem 1rem 0rem 1.3rem;
     transform: translate(0rem, -28rem);
+  }
+}
+
+@media (max-width: 412px) {
+  .projects {
+    transform: translate(0, 18rem);
+  }
+
+  .title {
+    transform: translate(0, 2rem);
+  }
+
+  .projects .corvo {
+    width: 22.5rem;
+    transform: translate(0.5rem, 24.25rem);
+  }
+
+  .projects .quadrado {
+    transform: translate(2.2rem, 0rem);
+    width: 90%;
+  }
+
+  .projects .container-linguagens {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    padding: 0rem 1rem 0rem 1.3rem;
+    transform: translate(0.9rem, -27rem);
+  }
+}
+
+@media (max-width: 375px) {
+  .projects { 
+    transform: translate(-1rem, 18rem);
+  }
+
+  .title { 
+    position: relative;
+    left: 1.9rem;
   }
 }
