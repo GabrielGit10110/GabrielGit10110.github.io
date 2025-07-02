@@ -241,11 +241,10 @@
     margin: 0 auto;
   }
 
-  .tux,
   .corvo,
   .quadrado,
-  .star {
-    width: 0;
+  .tux {
+    opacity: 0%;
   }
 
   .frase {
@@ -262,7 +261,16 @@
     width: 80%;
   }
 
+  .star {
+    position: absolute;
+    transform: translate(-9rem, 22rem);
+    width: 55%;
+    height: auto;
+    z-index: 1;
+  }
+
   .globo {
-    transform: translate(0%, 12%);
+    transform: translate(-61%, 12%);
+    width: 80%;
   }
 }

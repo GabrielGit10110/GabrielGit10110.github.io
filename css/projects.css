@@ -1,3 +1,7 @@
+/* ============================================= */
+/* Título e janelas                              */
+/* ============================================= */
+
 .projects {
   transform: translate(0, 40rem);
   font-family: var (--font-primary);
@@ -5,18 +9,89 @@
   position: relative;
 }
 
-.titulo {
+.projects .corvo,
+.projects .quadrado,
+.projects .container-linguagens,
+.projects .backend,
+.projects .frontend {
+  opacity: 0%;
+}
+
+.title {
   text-align: center;
   font-size: 6.25rem;
 }
 
+/* ============================================= */
+/* Responsividade                                */
+/* ============================================= */
+
 @media (max-width: 768px) {
- .projects { 
-    transform: translate(0, 20rem);
+  .projects {
+    transform: translate(0, 13rem);
   }
 
-  .titulo { 
+  .title {
     font-size: 4rem;
     text-align: center;
+  }
+
+  .projects .container-corvo2 {
+    display: inline-block;
+    position: relative;
+    width: 23.438rem;
+    height: 1.125rem;
+  }
+
+  .projects .corvo,
+  .projects .quadrado,
+  .projects .container-linguagens {
+    position: relative;
+    opacity: 100%;
+  }
+
+  .projects .backend,
+  .projects .frontend {
+    opacity: 100%;
+  }
+
+  .projects .container-linguagens {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    padding: 0rem 0.6rem 0rem 0.87rem;
+    transform: translate(1.5rem, -35rem);
+  }
+
+  .projects .backend { 
+    transform: translate(-3rem, 0rem);
+  }
+
+  i.nf.nf-oct-terminal {
+    transform: translate(0rem, 0.5rem);
+  }
+
+  i.nf.nf-seti-html {
+    transform: translate(3rem, 0.5rem);
+  }
+
+  .projects .corvo {
+    width: 22.5rem;
+    transform: translate(-0.5rem, 23.25rem);
+  }
+
+  .projects .quadrado {
+    transform: translate(1.3rem, -1rem);
+    width: 90%;
+  }
+
+  .projects .container-linguagens {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    padding: 0rem 1rem 0rem 1.3rem;
+    transform: translate(0rem, -28rem);
   }
 }

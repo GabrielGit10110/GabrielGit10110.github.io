@@ -83,7 +83,7 @@
 @media (max-width: 768px) and (orientation: portrait) {
   .about {
     padding: 1rem;
-    transform: translate(0, 10rem); /* Ajuste menor para mobile */
+    transform: translate(0, 20rem); /* Ajuste menor para mobile */
   }
 
   .title {
