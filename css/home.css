@@ -31,20 +31,23 @@
 }
 
 /* Menu de navegação */
-.home .opcoes {
+.home .opcoes,
+.opcoes a:link,
+.opcoes a:visited {
   font-family: var(--font-primary);
+  color: var(--white);
   font-size: 1.25rem; /* 20px */
   display: flex;
   gap: 0.625rem; /* 10px */
 }
 
-.opcoes span {
+.opcoes a {
   text-decoration: underline;
   cursor: pointer;
   transition: color 0.3s;
 }
 
-.opcoes span:hover {
+.opcoes a:hover {
   color: var(--focus);
 }
 
@@ -216,7 +219,7 @@
     background-color: var(--focus);
   }
 
-  .opcoes span:hover {
+  .opcoes a:hover {
     color: var(--black);
   }
 
@@ -276,26 +279,26 @@
 }
 
 @media (max-width: 412px) {
-  .logo { 
+  .logo {
     transform: translate(-13.5rem, 6rem);
   }
-  .star { 
-   transform: translate(-12rem, 25rem);
-   width: 80%;
+  .star {
+    transform: translate(-12rem, 25rem);
+    width: 80%;
   }
 
-  .home .opcoes { 
+  .home .opcoes {
     position: relative;
     left: 1.5rem;
   }
 }
 
 @media (max-width: 375px) {
-  .logo { 
+  .logo {
     transform: translate(-12rem, 6rem);
   }
-  .star { 
-   transform: translate(-9.5rem, 22rem);
-   width: 60%;
+  .star {
+    transform: translate(-9.5rem, 22rem);
+    width: 60%;
   }
 }

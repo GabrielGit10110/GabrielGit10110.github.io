@@ -24,15 +24,15 @@
   font-family: var(--font-secondary);
 }
 
-  body,
-  html {
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden; /* Evita scroll horizontal */
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-  }
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden; /* Evita scroll horizontal */
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
 
 /* ============================================= */
 /* ESTILOS GERAIS                                */
