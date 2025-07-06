@@ -230,7 +230,7 @@
     margin-bottom: 1rem;
   }
 
-  .home .ROUKAN { 
+  .home .ROUKAN {
     display: none;
   }
 
@@ -283,9 +283,6 @@
 }
 
 @media (max-width: 412px) {
-  .logo {
-    transform: translate(-13.5rem, 6rem);
-  }
   .star {
     transform: translate(-12rem, 25rem);
     width: 80%;
@@ -294,6 +291,14 @@
   .home .opcoes {
     position: relative;
     right: 0.5rem;
+  }
+
+  .globo {
+    transform: translate(-56%, 12%);
+  }
+
+  .logo {
+    transform: translate(-12rem, 6rem);
   }
 
   .home .ROUKAN {
@@ -305,15 +310,21 @@
   .home .ROUKAN {
     display: none;
   }
+
+  .globo {
+    transform: translate(-61%, 12%);
+  }
+
   .logo {
     transform: translate(-12rem, 6rem);
   }
+
   .star {
     transform: translate(-9.5rem, 22rem);
     width: 60%;
   }
 
-  .home .opcoes a { 
+  .home .opcoes a {
     font-size: 1.1rem;
     right: 1rem;
   }
