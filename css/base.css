@@ -13,6 +13,11 @@
 
   /* Cores do Background */
   --background: #28243a; /* Cor de fundo secundária */
+
+  /* highlight universal */
+  .highlight {
+    color: var(--focus);
+  }
 }
 
 /* Classes utilitárias para fontes */
