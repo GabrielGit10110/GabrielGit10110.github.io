@@ -79,9 +79,10 @@
 
 .frame-quadrado:hover .projeto {
   transform: scale(1.05);
+  cursor: pointer;
 }
 
-.frame-quadrado:hover .container-textProject a {
+.frame-quadrado:hover .container-textProject h2 {
   color: var(--focus) !important;
 }
 
@@ -118,16 +119,74 @@
   font-style: normal;
   opacity: 50%;
   margin: 0;
-  line-height: 2.5;
+  line-height: -2;
+  transform: translateY(-80%);
 }
 
-.container-textProject a,
-.container-textProject a:link,
-.container-textProject a:visited {
+.container-textProject h2 {
   font-size: 1.4rem;
   font-style: bold;
   color: var(--white);
   text-decoration: none;
+  transform: translateY(-50%);
+}
+
+.popup-Projects.active {
+  display: block;
+  transform: translate(100%, -40%);
+  width: 30rem;
+  height: 30rem;
+  background-color: var(--black);
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.popup-Projects { 
+  display: none;
+}
+
+.container-button .btn {
+  position: relative;
+  justify-self: center;
+
+  width: 6rem;
+  height: 2.3rem;
+  border-radius: 28px;
+  background-color: var(--white);
+  font-style: var(--font-primary);
+  color: var(--black);
+
+  transform: translate(0, 220%);
+}
+
+.btn p {
+  text-align: center;
+  transform: translateY(50%);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn:hover {
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: var(--focus);
+  font-weight: bold;
+}
+
+.container-wip img {
+  position: relative;
+  width: 35%;
+  height: auto;
+  transform: translate(90%, 40%);
+}
+
+.container-message {
+  position: relative;
+  text-align: center;
+
+  line-height: 0.5;
+
+  transform: translate(0, 200%);
 }
 
 /* ============================================= */
