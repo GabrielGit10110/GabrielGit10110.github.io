@@ -67,5 +67,3 @@ const closePopup = () => {
 const openPopup = () => {
 	popupWindow.classList.add('active');
 }
-
-
