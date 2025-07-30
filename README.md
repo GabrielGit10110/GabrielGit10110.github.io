@@ -6,7 +6,7 @@ Bem-vindo ao meu portfólio pessoal como desenvolvedor web!
 
 [![Live Demo](https://img.shields.io/badge/-Live%20Demo-blue?style=for-the-badge)](https://gabrielgit10110.github.io/)
 
-![Captura de Tela do Site](images/placeholder.png)
+![Captura de Tela do Site](images/screenshot.png)
 
 ## 🛠 Tecnologias Utilizadas
 
