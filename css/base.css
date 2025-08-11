@@ -39,6 +39,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body.active {
+  overflow-y: hidden;
+}
+
 /* ============================================= */
 /* ESTILOS GERAIS                                */
 /* ============================================= */

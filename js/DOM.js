@@ -19,6 +19,8 @@ const getYear = () => {
 }
 
 let popupWindow = document.getElementById('project-popup');
+const pageBody = document.body
+
 // funcao para fechar o popup
 export function configureClose() {
 	const btnFechar = document.getElementById("popup-CloseBtn");
@@ -50,6 +52,7 @@ export function renderizarProjetos(projetos, containerId) {
 	container.innerHTML = projetos.map(criarProjeto).join('');
 }
 
+
 export function configureOpen() {
 	const projects = document.getElementById("projetos-container");
 
@@ -62,8 +65,10 @@ export function configureOpen() {
 
 const closePopup = () => {
 	popupWindow.classList.remove('active');
+	pageBody.classList.remove('active');
 }
 
 const openPopup = () => {
 	popupWindow.classList.add('active');
+	pageBody.classList.add('active');
 }

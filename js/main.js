@@ -4,12 +4,31 @@ import { getDate, configureClose, configureOpen, renderizarProjetos } from './DO
 document.addEventListener('DOMContentLoaded', () => {
 
 
-	const projetos = Array(4).fill({
+	const projetos = [{
+		link: "https://github.com/GabrielGit10110/Whatsapp-Bot",
+		imagem: "https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/1024px/1f4e6.png",
+		titulo: "Whatsapp Chat-Bot",
+		descricao: "Customer chat-bot"
+	},
+	{
 		link: "https://www.google.com",
 		imagem: "images/wip.png",
 		titulo: "Work in progress...",
 		descricao: "Project description"
-	});
+	},
+	{
+		link: "https://www.google.com",
+		imagem: "images/wip.png",
+		titulo: "Work in progress...",
+		descricao: "Project description"
+	},
+	{
+		link: "https://www.google.com",
+		imagem: "images/wip.png",
+		titulo: "Work in progress...",
+		descricao: "Project description"
+	}]
+	;
 
 	renderizarProjetos(projetos, 'projetos-container');
 

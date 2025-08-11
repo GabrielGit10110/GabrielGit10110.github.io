@@ -132,16 +132,20 @@
 }
 
 .popup-Projects.active {
+  top: -20vh;
+  position: sticky;
   display: block;
-  transform: translate(100%, -40%);
+  transform: translate(100%, -65%);
   width: 30rem;
   height: 30rem;
   background-color: var(--black);
   overflow: hidden;
+  overflow-y: hidden;
   border-radius: 15px;
+  z-index: 500;
 }
 
-.popup-Projects { 
+.popup-Projects {
   display: none;
 }
 
@@ -332,5 +336,13 @@
     transform: translateX(4.5rem);
     grid-template-columns: 0;
     grid-template-rows: 22rem 22rem 22rem 22rem;
+  }
+
+  .popup-Projects.active {
+    position: sticky;
+    top: 0;
+    transform: translate(14.5%, 0);
+    width: 20rem;
+    height: 22rem;
   }
 }
