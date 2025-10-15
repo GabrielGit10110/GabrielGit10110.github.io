@@ -22,7 +22,7 @@ Bem-vindo ao meu portfólio pessoal como desenvolvedor web!
 ## 🎨 Design Features
 
 - Layout responsivo com Grid CSS e Flexbox
-- Tipografia personalizada com `Krux Grunge` e `JetBrains Mono`
+- Tipografia personalizada com `GODZILLA` e `JetBrains Mono`
 - Efeitos visuais com `transform` e `z-index`
 - Paleta de cores minimalista:
   - `--white: #faf7f5`
