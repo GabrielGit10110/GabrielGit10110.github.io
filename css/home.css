@@ -51,6 +51,17 @@
   color: var(--focus);
 }
 
+.highlight a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.highlight a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
 .home .ROUKAN {
   display: flex;
   flex-direction: column;
@@ -59,7 +70,7 @@
   font-family: var(--font-secondary);
   font-weight: bolder;
   font-size: 7.188rem; /* 115px */
-  transform: scaleY(0.67) translateX(236%);
+  transform: scaleY(0.67) translateX(262%);
   margin-top: 1.2%;
   letter-spacing: -0.5rem; /* -8px */
   z-index: 10;

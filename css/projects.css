@@ -87,27 +87,71 @@
 }
 
 .frame-retangulo {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-
-  padding-top: 2rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-
-  width: 20rem;
-  height: 40rem;
-  border-radius: 20px;
-  background-color: var(--background);
-
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width: 20rem;
+    height: 40rem;
+    border-radius: 20px;
+    background-color: var(--background);
+    flex-direction: column;
   .crowPFP {
-    width: 80%;
+    width: 85%;
     height: auto;
+    position: relative;
+    transform: translateX(9%);
     background-color: var(--black);
     border-radius: 20px;
   }
+
+  .frame-text {
+    width: 100%;
+    height: auto;
+  }
 }
 
+.frame-text h1 {
+  font-size: 2rem;
+  color: var(--focus);
+  text-align: center;
+
+}
+
+.frame-text h2 {
+  font-size: 1.5rem;
+  text-align: center;
+
+}
+
+.frame-text span {
+  font-size: 5rem;
+  position: absolute;
+  transform: translateX(180%);
+  color: var(--focus);
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.project-link:hover .frame-quadrado {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.wip-project {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.wip-project:hover {
+    transform: translateY(-5px);
+}
 .container-textProject {
   position: relative;
   font-family: var(--font-primary);
@@ -132,7 +176,7 @@
 }
 
 .popup-Projects.active {
-  top: -20vh;
+  top: -30vh;
   position: sticky;
   display: block;
   transform: translate(100%, -65%);

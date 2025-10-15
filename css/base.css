@@ -1,10 +1,11 @@
 /* ============================================= */
 /* VARIÁVEIS GLOBAIS                             */
 /* ============================================= */
+
 :root {
   /* fontes */
   --font-primary: "JetBrains Mono", monospace;
-  --font-secondary: "Krux Grunge";
+  --font-secondary: "Krux Grunge", monospace;
 
   /* Cores texto e itens */
   --white: #faf7f5;
