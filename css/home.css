@@ -69,10 +69,10 @@
   color: var(--focus);
   font-family: var(--font-secondary);
   font-weight: bolder;
-  font-size: 7.188rem; /* 115px */
-  transform: scaleY(0.67) translateX(262%);
-  margin-top: 1.2%;
-  letter-spacing: -0.5rem; /* -8px */
+  font-size: 9rem; /* 115px */
+  transform: scaleY(0.55) translateX(243%);
+  margin-top: -2%;
+  letter-spacing: -0.08rem; /* -8px */
   z-index: 10;
 }
 
